@@ -16,7 +16,7 @@ function App() {
 
   const { user, resume, highlights, description } = data.payload
   return (
-    <div className="App">
+    <div className="App grid-container">
       <div className="main-content">
         <User user={user} />
         <Resume resume={resume} />

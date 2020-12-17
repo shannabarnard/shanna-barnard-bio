@@ -2,11 +2,15 @@ import React from 'react'
 
 function Description ({ description }) {
   return (
-    <div>
-      <h5>
-        Why we should work together
-      </h5>
-      <p>{ description }</p>
+    <div className="info">
+      <div className="info--left">
+        <h2>
+          Why we should work together
+        </h2>
+      </div>
+      <div className="info--right">
+        <p>{ description }</p>
+      </div>
     </div>
   )
 }

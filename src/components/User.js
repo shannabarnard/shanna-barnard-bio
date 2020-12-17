@@ -2,13 +2,13 @@ import React from 'react'
 
 function User({ user }) {
   return (
-    <div>
-      <div>
+    <div className="user">
+      <div className="">
         <img src={user.avatar} alt="Shanna Barnard avatar" />
       </div>
-      <div>
+      <div className="">
         <h1>{user.name} </h1>
-        <p>{user.position}</p>
+        <h3>{user.position}</h3>
       </div>
     </div>
   )

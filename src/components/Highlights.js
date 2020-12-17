@@ -2,11 +2,15 @@ import React from 'react'
 
 function Highlights ({ highlights }) {
   return (
-    <div>
-      <h5>
-        Career highlights
-      </h5>
-      <p>{highlights}</p>
+    <div className="info">
+      <div className="info--left">
+        <h2>
+          Career highlights
+        </h2>
+      </div>
+      <div className="info--right">
+        <p>{highlights}</p>
+      </div>
     </div>
   )
 }

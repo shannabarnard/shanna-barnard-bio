@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-/* Resets: As a small and solo developed app I'm keeping things simple.
+/* Resets: As a small app I'm keeping things simple.
   Obviously at scale using normalize or alternatives would be a better choice.
 */
 *,
@@ -32,13 +32,60 @@ li {
 
 /* Global */
 body {
-  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: 'Lato', sans-serif;
+}
+
+/* Grid */
+.grid-container {
+  width: 80vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 60px repeat(1, 1fr) 60px;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container > .main-content {
+  grid-column: 1 / span 4;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container > .main-content > * {
+  grid-column: 1 / -1;
+}
+
+.grid-container > .main-content > .info {
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container > .main-content > .info > .info--left {
+  grid-column: 1 / 1;
+}
+
+.grid-container > .main-content > .info > .info--right {
+  grid-column: -1;
+}
+
+/* Components */
+.user {
+  text-align: center;
+}
+
+.info {
+  border-top: 1px solid #f1f1f1;
+  padding: 1rem;
 }

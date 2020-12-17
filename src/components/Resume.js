@@ -2,11 +2,15 @@ import React from 'react'
 
 function Resume ({ resume }) {
   return (
-    <div>
-      <h5>
-        Information regarding my CV goes here
-      </h5>
-      <p>{resume}</p>
+    <div className="info">
+      <div className="info--left">
+        <h2>
+          Career history
+        </h2>
+      </div>
+      <div className="info--right">
+        <p>{resume}</p>
+      </div>
     </div>
   )
 }
