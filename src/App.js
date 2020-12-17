@@ -5,7 +5,7 @@ import Resume from './components/Resume'
 import Highlights from './components/Highlights'
 import Description from './components/Description'
 
-// import './App.css';
+import './App.css';
 
 function App() {
   const { data } = useContext(AppContext)
