@@ -1,8 +1,8 @@
 # Welcome to Shanna Barnard's online bio 💻
 
 ### Setup
-1. `git clone https://github.com/shannabarnard/my-bio.git`
-1. `cd my-bio`
+1. `git clone https://github.com/shannabarnard/shanna-barnard-bio.git`
+1. `cd shanna-barnard-bio`
 1. `yarn install`
 1. `yarn start`
 
