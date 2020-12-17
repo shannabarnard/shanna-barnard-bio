@@ -19,9 +19,9 @@ function App() {
     <div className="App">
       <div className="main-content">
         <User user={user} />
-        <Resume user={resume} />
-        <Highlights user={highlights} />
-        <Description user={description} />
+        <Resume resume={resume} />
+        <Highlights highlights={highlights} />
+        <Description description={description} />
       </div>
     </div>
   )

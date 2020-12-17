@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Resume ({ Resume }) {
+function Resume ({ resume }) {
   return (
     <div>
       <h5>
         Information regarding my CV goes here
       </h5>
-      <p>{Resume}</p>
+      <p>{resume}</p>
     </div>
   )
 }

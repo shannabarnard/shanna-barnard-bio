@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Highlights ({ Highlights }) {
+function Highlights ({ highlights }) {
   return (
     <div>
       <h5>
         Career highlights
       </h5>
-      <p>{Highlights}</p>
+      <p>{highlights}</p>
     </div>
   )
 }

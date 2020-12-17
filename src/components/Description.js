@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Description ({ Description }) {
+function Description ({ description }) {
   return (
     <div>
       <h5>
         Why we should work together
       </h5>
-      <p>{Description}</p>
+      <p>{ description }</p>
     </div>
   )
 }
