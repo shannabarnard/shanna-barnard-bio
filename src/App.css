@@ -85,6 +85,10 @@ h3 {
   text-align: center;
 }
 
+.user__image img {
+  border-radius: 50%;
+}
+
 .info {
   border-top: 1px solid #f1f1f1;
   padding: 1rem;
