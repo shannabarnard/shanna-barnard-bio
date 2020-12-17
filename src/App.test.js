@@ -1,9 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import App from './App';
+import User from './components/User'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+test('renders User (username) component', () => {
+  const user = { name: 'username', avatar: 'avatar' }
+
+  const { getByText } = render(<User user={user} />)
+  const username = getByText(/username/i)
+  expect(username).toBeInTheDocument()
+})
