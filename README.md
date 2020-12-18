@@ -6,6 +6,8 @@
 1. `yarn install`
 1. `yarn start`
 
+### Tests
+1. `yarn test`
 ## What you'll find here 📝
 
 - Details around my CV
